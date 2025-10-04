@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: install apache2 webserver on node ($ sudo apt-get install apche2)
+    apt: 
+       name: apache2
+       state: present
+       
+
+
+
+
+
+  
+
