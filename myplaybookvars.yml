@@ -10,7 +10,9 @@
     apt:
       name: "{{var01}}"
       state: present 
-  - name:  i want to debuge value of var01
-    debug: 
-       msg: "{{var01}}"
+  - name: i want to execute direct linux command
+    command: hostsname -f
+  
+  
+         
   
