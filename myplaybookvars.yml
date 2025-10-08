@@ -1,0 +1,16 @@
+---
+- hosts: 172.31.18.192
+  become: yes
+  vars: 
+    var01: git
+    var02: tree
+    var03: wget
+  tasks:
+  - name: i want to display var01 
+    apt:
+      name: "{{var01}}"
+      state: present 
+  - name:  i want to debuge value of var01
+    debug: 
+       msg: "{{var01}}"
+  
