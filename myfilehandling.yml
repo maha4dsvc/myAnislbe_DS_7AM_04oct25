@@ -6,4 +6,9 @@
   - name: i want to copy file into node side 
     copy:
        src: mytestfile
-       dest: /home/maha/mytestfile
+       dest: /home/maha/mytestfile  
+  - name: install webserer 
+    apt:
+      name: apache2
+      state: present
+      
