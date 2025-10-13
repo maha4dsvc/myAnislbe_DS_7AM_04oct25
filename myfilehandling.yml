@@ -15,8 +15,14 @@
     template:
         src: myindex.j2
         dest: /var/www/html/index.html
+    notify: restartwebserver
   - name: download remote file 
     get_url:
        url: https://github.com/maha4dsvc/mahalogin/blob/master/mahaLogin.war
        dest: /home/maha/mahaLogin.war
        force_basic_auth: yes
+  handlers:
+  - name: restartwebserver
+    service:
+       name: apache2
+       state: present
