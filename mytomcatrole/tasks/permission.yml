@@ -1,0 +1,6 @@
+---
+- name: grant owership on tomcat folder
+  command: "sudo chown -R tomcat: /opt/tomcat"
+
+- name: grand execute permission 
+  command: "sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'"
