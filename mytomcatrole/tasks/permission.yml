@@ -4,3 +4,4 @@
 
 - name: grand execute permission 
   command: "sudo sh -c 'chmod +x /opt/tomcat/bin/*.sh'"
+
